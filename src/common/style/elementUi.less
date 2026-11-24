@@ -1,0 +1,93 @@
+// 链接样式定制
+.el-link.el-link--primary {
+  color: #1c94ff;
+  text-decoration: underline;
+}
+
+.el-link.el-link--primary:hover {
+  color: #1c94ff;
+}
+
+.el-link.el-link--primary:active {
+  color: #1c94ff;
+}
+//  表格暂无数据时的背景色
+.el-table__empty-block {
+  background-color: #001b33 !important;
+}
+
+.el-table__empty-text {
+  color: #ffffff;
+}
+
+.el-table__header-wrapper th {
+  background-color: #001b33 !important;
+  color: #ffffff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+}
+
+.el-table__body-wrapper td {
+  background-color: #001b33 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sort-caret.ascending,
+.sort-caret.descending {
+  color: #ffffff !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.el-pagination .btn-prev {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.el-pagination .btn-next {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: #005bac !important;
+}
+
+.el-table th > .cell {
+  color: #ffffff;
+}
+
+// 表头渐变色设置
+.el-table__header-wrapper {
+  .el-table__header {
+    /* 移除单独th的背景色 */
+    th {
+      opacity: 0.6 !important;
+      border: none !important;
+      border-bottom: none !important;
+    }
+
+    /* 将渐变背景应用到整个tr元素 */
+    tr {
+      background: linear-gradient(
+        106deg,
+        rgba(207, 206, 206, 0.9) 0%,
+        #001b33 100%
+      ) !important;
+      border: none !important;
+    }
+  }
+}
+.el-table__row {
+  background-color: #001b33 !important;
+}
+.el-table__row:hover td {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/* 表格最后一行底部边框设置 */
+.el-table::before {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

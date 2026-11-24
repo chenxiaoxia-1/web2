@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "SourceHanSansCN-Bold";
+  src: url("../../assets/fonts/SourceHanSansCN-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceHanSansCN-Normal";
+  src: url("../../assets/fonts/SourceHanSansCN-Normal.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceHanSansCN-Medium";
+  src: url("../../assets/fonts/SourceHanSerifCN-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceHanSansCN-Light";
+  src: url("../../assets/fonts/SourceHanSansCN-Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../../assets/fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D-DINExp-Bold";
+  src: url("../../assets/fonts/D-DINExp-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.cn-bold {
+  font-family: SourceHanSansCN-Bold;
+}
+
+.cn-normal {
+  font-family: SourceHanSansCN-Normal;
+}
+
+.cn-medium {
+  font-family: SourceHanSerifCN-Medium;
+}
+
+.cn-light {
+  font-family: SourceHanSansCN-Light;
+}
+
+.en-bold {
+  font-family: Roboto-Bold;
+}
+
+.en-light {
+  font-family: Roboto-Light;
+}
+
+.en-medium {
+  font-family: Roboto-Medium;
+}
+
+.en-regular {
+  font-family: Roboto-Regular;
+}
+
+// 区块内容区（表格、列表等主体内容）
+.section-body {
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  .data-table {
+    width: 100%;
+    margin: 1em 0;
+    color: #ffffff;
+
+    .cell-text {
+      cursor: pointer;
+      font-size: 0.8vw;
+      font-family: SourceHanSansCN-Normal;
+      line-height: 0.8vw;
+      color: #ffffff;
+    }
+
+    img {
+      width: 40px;
+      object-fit: contain;
+    }
+  }
+}
+
+// 区块分页区
+.section-pagination {
+  width: 100%;
+  height: 2.1vw;
+  margin-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vw;
+  text-align: center;
+}
+.secDiv {
+  margin-top: 14vw;
+}
+.supervision {
+  margin-top: 10vw;
+}
+
+// 页面大标题（如：人在伟思、联系伟思、创始人寄语）
+.secDiv,
+.supervision {
+  margin-bottom: 3vw;
+
+  .text1 {
+    text-align: center;
+    font-size: 3.1vw;
+    line-height: 4.7vw;
+    color: #fff;
+
+    &:not([class*="en-"]) {
+      font-family: SourceHanSansCN-Light;
+    }
+  }
+
+  .text3 {
+    text-align: center;
+    font-size: 3.1vw;
+    line-height: 4.7vw;
+    color: #fff;
+    font-family: SourceHanSansCN-Bold;
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .secDiv,
+  .supervision {
+    padding: 30px 0 0;
+
+    .text3,
+    .text1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .text-small {
+      font-size: 14px;
+    }
+  }
+
+  .section-body {
+    width: auto;
+
+    .data-table {
+      .cell-text {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .section-pagination {
+    width: auto;
+    margin: 0 20px;
+    height: auto;
+
+    .el-pagination .el-pager li:hover {
+      color: #ffffff;
+    }
+  }
+}
